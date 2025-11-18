@@ -11,7 +11,7 @@
             }
             .wlcm{
                 font-size: 150px;
-                font-weight: 700;
+                font-weight: 300;
                 line-height: 0.0;
             }
             .desc{
@@ -21,28 +21,44 @@
             }
             h1{
                 font-family: Arial, Helvetica, sans-serif;
-                color: #c3cef0;
+                color: #4663b9;
             }
             body{
-                background-image: linear-gradient(#5c7bd6, #b7c5f0);
+                animation-name: bganim;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                background-image: linear-gradient(#000000, #000000, #5c7bd6, #5c7bd6, #b7c5f0);
+                background-size: 100% 300%;
+            }
+            @keyframes bganim {
+                from {background-position: 0%, 0%;}
+                to {background-position: 0% 100%;}
+            }
+            @keyframes fadein {
+                from {opacity: 0;}
+                to {opacity: 1;}
             }
             .rnd{
                 background-color: #88a4f6;
                 width: fit-content;
                 height: fit-content;
                 border-radius: 35px;
+                animation-name: fadein;
+                animation-duration: 2s;
             }
             .msg{
                 background-image: linear-gradient(#849ada, #869ee6, #a5b5e6);
                 border-radius: 20px;
                 width: 1000px;
+                animation-name: fadein;
+                animation-duration: 2s;
             }
             .main{
                 display: flex;
                 flex-direction: column;
             }
             .sect{
-                background-color: #4059a6;
+                background-color: #203470;
                 border-radius: .7cm;
                 width: fit-content;
                 font-size: 50px;
@@ -101,6 +117,31 @@
             <p class="desc">I don't draw that often, but when I do I mostly sketch people or small objects. I'm not that great at it yet but I do seem to get better as time goes on.</p>
         </div>
         <div class="contnt"><p class="desc">My favorite way to draw is digitally, more exactly using a graphic tablet. At the moment, I'm using Krita as my drawing software.</p></div>
+        </div>
+        <div class="space" style="height: 200px;"></div>
+        <div class="outr">
+        <div class="sect"><h1 style="color: #798bc0; margin: 10px; font-size: 120px;">Events I attented</h1></div></div>
+        <div class="outr">
+        <div class="contnt">
+            <p class="desc">Photo here</p>
+        </div>
+        <div class="contnt"><p class="desc">Another here pls</p></div>
+        </div>
+        <div class="space" style="height: 30px;"></div>
+        <div class="outr"><div class="sect"><h1 style="color: #88a4f6; margin: 10px;">Hackclub Daydream</h1></div></div></div>
+        <div class="outr">
+        <div class="contnt">
+            <p class="desc">More specifically I attended Daydream Brasov. Even thought I wasn't able to make much of a game in the 24h time limit of the hackathon, I did have a lot of fun programming and interacting with the other participants.</p>
+        </div>
+        <div class="contnt"><p class="desc">Photo of the pin here, pls :3</p></div>
+        </div>
+        <div class="space" style="height: 30px;"></div>
+        <div class="outr"><div class="sect"><h1 style="color: #88a4f6; margin: 10px;">Summer of Making</h1></div></div></div>
+        <div class="outr">
+        <div class="contnt">
+            <p class="desc">I only made about 3 or 5 projects that I actually submitted to Summer of Making, even though I had planned to do more. Sadly, a lot of my time went into projects that I never managed to finish and into trying to make a game for another event, unsuccessfully.</p>
+        </div>
+        <div class="contnt"><p class="desc">Looking back at it now, I think I should've dedicated more time towards Summer of Making. I really wanted to get specific rewards from the store, but I never got enough points to actually buy them. I did manage to, at least, get a Pinecil, which was one of the things I wanted.</p></div>
         </div>
     </body>
 </html>
